@@ -1,0 +1,149 @@
+@media (max-width: 1200px) {
+  .med-ai-wrap.has-result {
+    grid-template-columns: 1fr;
+  }
+  .f-kpi-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  .f-sidebar {
+    width: 255px;
+    min-width: 255px;
+  }
+}
+
+@media (max-width: 860px) {
+  nav {
+    padding: 0 1.25rem;
+  }
+  .nav-links,
+  .nav-cta {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+  #inicio {
+    padding: 5rem 1.25rem 4rem;
+  }
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    text-align: center;
+  }
+  .hero-btns {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .btn-hero-m,
+  .btn-hero-f {
+    width: 100%;
+    padding: 1rem;
+  }
+  .about-wrap {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .plans {
+    grid-template-columns: 1fr;
+    max-width: 380px;
+    margin: 3rem auto 0;
+  }
+  footer {
+    padding: 1.5rem 1.25rem 1rem;
+  }
+  .footer-inner {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .f-auth-layout {
+    grid-template-columns: 1fr;
+  }
+  .f-auth-visual {
+    display: none;
+  }
+  .f-form-row {
+    grid-template-columns: 1fr;
+  }
+  .f-auth-side {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .med-mob-header,
+  .forn-mob-header {
+    display: flex;
+  }
+  .f-sidebar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 200;
+    transform: translateX(-100%);
+    transition: transform 0.25s;
+    width: var(--f-sidebar) !important;
+    min-width: var(--f-sidebar) !important;
+    height: 100%;
+    overflow: hidden;
+    background: #134f37;
+  }
+  .f-sidebar.mob-open {
+    transform: translateX(0) !important;
+  }
+  .f-app-layout {
+    position: relative;
+    overflow: hidden;
+  }
+  .f-app-main {
+    width: 100%;
+  }
+  .f-modal-box {
+    max-width: calc(100vw - 2rem) !important;
+    max-height: 92vh;
+    border-radius: 1rem;
+  }
+  .f-product-grid {
+    grid-template-columns: 1fr;
+  }
+  .f-oc-meta {
+    flex-wrap: wrap;
+    gap: 0.3rem;
+  }
+  .f-oc-actions {
+    flex-direction: column;
+  }
+  .f-oc-actions button {
+    width: 100%;
+  }
+  .f-kpi-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .med-trat-header {
+    flex-wrap: wrap;
+  }
+  .med-trat-header button {
+    width: 100%;
+  }
+  .med-radio-grp {
+    flex-wrap: wrap;
+  }
+  .sec-title {
+    font-size: 1.9rem;
+  }
+  .v-upload-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 400px) {
+  .f-kpi-grid {
+    grid-template-columns: 1fr;
+  }
+  .stat-grid {
+    grid-template-columns: 1fr;
+  }
+}

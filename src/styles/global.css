@@ -1,0 +1,242 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-muted {
+  color: var(--text3);
+}
+.mt-xs {
+  margin-top: 0.4rem;
+}
+.mt-sm {
+  margin-top: 0.75rem;
+}
+.mt-md {
+  margin-top: 1rem;
+}
+.mb-md {
+  margin-bottom: 1rem;
+}
+.p-md {
+  padding: 1rem;
+}
+.full-width {
+  width: 100%;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.readonly-field {
+  background: var(--off) !important;
+  color: var(--text2) !important;
+  cursor: not-allowed !important;
+}
+.label-note {
+  color: var(--text3);
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+.om-label {
+  color: var(--f-text3);
+  font-size: 0.82rem;
+}
+.om-value {
+  font-size: 0.9rem;
+}
+.pc-actions-bordered {
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--off);
+  margin-top: 0.75rem;
+}
+.modal-wide {
+  max-width: 720px !important;
+  max-height: 88vh;
+  overflow-y: auto;
+}
+
+.f-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.f-form-group label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--f-text);
+  letter-spacing: -0.01em;
+}
+.f-form-group input,
+.f-form-group select,
+.f-form-group textarea {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 1.5px solid var(--f-border);
+  border-radius: var(--f-r);
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  color: var(--f-text);
+  background: #fff;
+  transition: border-color 0.18s;
+}
+.f-form-group input:focus,
+.f-form-group select:focus,
+.f-form-group textarea:focus {
+  outline: none;
+  border-color: var(--f-green);
+}
+.f-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+.f-form-error {
+  color: var(--f-danger);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.4rem 0;
+}
+
+.f-btn-primary {
+  background: var(--f-green);
+  color: #fff;
+  border: none;
+  border-radius: var(--f-r);
+  padding: 0.65rem 1.25rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+  transition: all 0.18s;
+}
+.f-btn-primary:hover {
+  background: var(--f-green-md);
+}
+.f-btn-primary.full {
+  width: 100%;
+  padding: 0.75rem;
+}
+.f-btn-primary.sm {
+  padding: 0.4rem 0.85rem;
+  font-size: 0.8rem;
+}
+.f-btn-outline {
+  background: transparent;
+  color: var(--f-green);
+  border: 1.5px solid var(--f-green);
+  border-radius: var(--f-r);
+  padding: 0.65rem 1.25rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+  transition: all 0.18s;
+}
+.f-btn-outline:hover {
+  background: var(--f-green-lt);
+}
+.f-btn-outline.sm {
+  padding: 0.4rem 0.85rem;
+  font-size: 0.8rem;
+}
+.f-btn-danger {
+  background: var(--f-danger);
+  color: #fff;
+  border: none;
+  border-radius: var(--f-r);
+  padding: 0.65rem 1.25rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+  transition: opacity 0.18s;
+}
+.f-btn-danger:hover {
+  opacity: 0.85;
+}
+.f-btn-danger.sm {
+  padding: 0.4rem 0.85rem;
+  font-size: 0.8rem;
+}
+.f-btn-accept {
+  background: #16a34a;
+  color: #fff;
+  border: none;
+  border-radius: var(--f-r);
+  padding: 0.65rem 1.25rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+  transition: opacity 0.18s;
+}
+.f-btn-accept:hover {
+  opacity: 0.85;
+}
+.f-btn-accept.sm {
+  padding: 0.4rem 0.85rem;
+  font-size: 0.8rem;
+}
+
+@keyframes fFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fBounce {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
+@keyframes fPulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

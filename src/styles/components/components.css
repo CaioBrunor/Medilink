@@ -1,0 +1,233 @@
+.demo-banner {
+  background: var(--accent-lt);
+  border-bottom: 1.5px solid var(--accent);
+  color: #7a5000;
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem 1.25rem;
+  flex-shrink: 0;
+}
+.demo-banner-icon {
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+.demo-banner span:nth-child(2) {
+  flex: 1;
+}
+.demo-banner-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #7a5000;
+  font-size: 1rem;
+  padding: 0 0.25rem;
+  margin-left: auto;
+  transition: opacity 0.18s;
+}
+.demo-banner-close:hover {
+  opacity: 0.6;
+}
+
+.confirm-modal-box {
+  text-align: center;
+  max-width: 380px;
+}
+.confirm-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+.confirm-message {
+  font-size: 0.95rem;
+  color: var(--f-text2);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+.confirm-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+}
+.confirm-danger {
+  background: var(--danger) !important;
+  color: #fff !important;
+  border: none !important;
+}
+.confirm-danger:hover {
+  background: #b91c1c !important;
+}
+
+.f-status-actions {
+  margin-top: 0.75rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.f-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 600;
+  padding: 1rem;
+}
+.f-modal-box {
+  background: #fff;
+  border-radius: var(--f-rl);
+  padding: 2rem;
+  width: 100%;
+  max-width: 560px;
+  position: relative;
+  animation: fFadeUp 0.3s ease both;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.f-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.f-modal-header h3 {
+  font-family: "Syne", sans-serif;
+  font-size: 1.2rem;
+}
+.f-modal-close {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: var(--f-text3);
+  transition: color 0.18s;
+  padding: 0.25rem 0.5rem;
+}
+.f-modal-close:hover {
+  color: var(--f-text);
+}
+
+.f-om-grid {
+  display: flex;
+  flex-direction: column;
+}
+.f-om-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--f-off);
+  font-size: 0.9rem;
+}
+.f-om-row:last-child {
+  border-bottom: none;
+}
+
+.med-tag-wrap {
+  border: 1.5px solid var(--f-border);
+  border-radius: var(--f-r);
+  padding: 0.5rem 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  min-height: 44px;
+  background: #fff;
+  cursor: text;
+  transition: border-color 0.18s;
+}
+.med-tag-wrap:focus-within {
+  border-color: var(--f-green);
+}
+.med-tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+.med-tag {
+  background: var(--f-green-lt);
+  color: var(--f-green-dk);
+  border: 1px solid var(--f-border);
+  border-radius: 100px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.med-tag button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--f-text3);
+  font-size: 0.8rem;
+  padding: 0;
+  line-height: 1;
+  transition: color 0.15s;
+}
+.med-tag button:hover {
+  color: var(--f-danger);
+}
+.med-tag-inp {
+  border: none;
+  outline: none;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.88rem;
+  flex: 1;
+  min-width: 120px;
+  background: transparent;
+  padding: 0.1rem 0;
+}
+.med-tag-sugs {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  margin-top: 0.35rem;
+}
+.med-tag-sugs span {
+  background: var(--f-off);
+  border: 1px solid var(--f-border);
+  border-radius: 100px;
+  padding: 0.2rem 0.65rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.15s;
+  color: var(--f-text2);
+}
+.med-tag-sugs span:hover {
+  background: var(--f-green-lt);
+  border-color: var(--f-green);
+  color: var(--f-green);
+}
+
+/* ── Radio group ── */
+.med-radio-grp {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.med-radio {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 100px;
+  border: 1.5px solid var(--f-border);
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--f-text2);
+  transition: all 0.18s;
+  user-select: none;
+}
+.med-radio:has(input:checked) {
+  background: var(--f-green-lt);
+  border-color: var(--f-green);
+  color: var(--f-green-dk);
+}
+.med-radio input {
+  display: none;
+}

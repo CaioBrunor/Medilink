@@ -1,0 +1,39 @@
+:root {
+  --green: #1a6b4a;
+  --green-lt: #e8f4ee;
+  --green-md: #2e8b65;
+  --green-dk: #134f37;
+  --accent: #f0a500;
+  --accent-lt: #fef4dc;
+  --navy: #0e2a45;
+  --white: #fff;
+  --off: #f5f7f5;
+  --border: #d4e4da;
+  --text: #12201a;
+  --text2: #4a6358;
+  --text3: #8aa49a;
+  --danger: #dc2626;
+  --danger-lt: #fee2e2;
+  --r: 8px;
+  --rl: 14px;
+  --sidebar: 295px;
+
+  --f-green: var(--green);
+  --f-green-lt: var(--green-lt);
+  --f-green-md: var(--green-md);
+  --f-green-dk: var(--green-dk);
+  --f-accent: var(--accent);
+  --f-accent-lt: var(--accent-lt);
+  --f-navy: var(--navy);
+  --f-white: var(--white);
+  --f-off: var(--off);
+  --f-border: var(--border);
+  --f-text: var(--text);
+  --f-text2: var(--text2);
+  --f-text3: var(--text3);
+  --f-danger: var(--danger);
+  --f-danger-lt: var(--danger-lt);
+  --f-r: var(--r);
+  --f-rl: var(--rl);
+  --f-sidebar: var(--sidebar);
+}
